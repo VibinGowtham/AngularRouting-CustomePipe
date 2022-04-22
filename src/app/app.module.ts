@@ -2,14 +2,26 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FirstComponentComponent } from './first-component/first-component.component';
+import { SecondComponentComponent } from './second-component/second-component.component';
+import { TestPipe } from './test.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstComponentComponent,
+    SecondComponentComponent,
+    TestPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

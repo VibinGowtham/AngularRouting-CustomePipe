@@ -1,0 +1,22 @@
+<div id="form">
+    <input type="text" [(ngModel)]="user.profilePicture" placeholder="Name">
+    <input type="text" [(ngModel)]="user.name" placeholder="Name">
+    <input type="text" [(ngModel)]="user.specialization" placeholder="Specialization">
+    <input type="text" [(ngModel)]="user.company" placeholder="Company">
+    <input type="text" [(ngModel)]="user.city" placeholder="City">
+    <input type="text" [(ngModel)]="user.experience" placeholder="Experience">
+    <input type="text" [(ngModel)]="user.frontendFramework" placeholder="FrontendFramework">
+    <input type="text" [(ngModel)]="user.backendFramework" placeholder="BackendFramework">
+</div>
+
+<div id="gridContainer">
+    <div id="image">
+        <img src={{user.profilePicture}}>
+    </div>
+
+    <p>
+        Hi I am <b>{{user.name}}</b>.I am currently working as a <b>{{user.specialization}}</b> at <b>{{user.company}} - {{user.city}}</b> branch.I am having <b>{{user.experience}}</b> years of experience in 
+        building Large Scale Enterprise level applications using <b> {{user.frontendFramework}}</b> and <b>{{user.backendFramework}}</b> Frameworks.
+    </p>
+
+</div>

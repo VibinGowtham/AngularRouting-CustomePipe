@@ -1,0 +1,45 @@
+#gridContainer{
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 63%;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 40% 60%;
+    width: 20%;
+    height: 55vh;
+    border: 1px solid black;
+}
+
+#image{
+    /* border: 1px solid black; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#form{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 10%;
+    display: grid;
+    width: 30%;
+
+    /* height: 40%; */
+    /* align-items: center; */
+    justify-content: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
